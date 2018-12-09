@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import Amplify from 'aws-amplify'
 import config from './config'
-
+// the config file is getignored
 import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
@@ -33,9 +33,9 @@ Amplify.configure({
 })
 
 ReactDOM.render(
-  <Router>
+  <BrowserRouter>
     <App />
-  </Router>,
+  </BrowserRouter>,
   document.getElementById('root')
 )
 
